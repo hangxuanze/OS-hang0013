@@ -42,7 +42,11 @@ void vf011rd(){
 void vf011wr(){
 }
 
+void reserved(){
+}
 
+void cpukil(){
+}
 
 
 void main(){
