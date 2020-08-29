@@ -31,6 +31,8 @@ void reset()
 	}
 	
 }
+void pagfault(){
+}
 
 void main(){
 	
