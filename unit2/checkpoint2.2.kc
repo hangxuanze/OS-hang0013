@@ -37,6 +37,12 @@ void restorkey(){
 }
 void alttabkey(){
 }
+void vf011rd(){
+}
+void vf011wr(){
+}
+
+
 
 
 void main(){
