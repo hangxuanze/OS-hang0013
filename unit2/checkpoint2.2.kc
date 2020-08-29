@@ -53,6 +53,10 @@ void main(){
 	
 }
 
+
+void syscall00(){
+	
+}
 void syscall01(){
 	
 }
@@ -101,10 +105,10 @@ void syscall0F(){
 void syscall10(){
 	
 }
-void syscall11(){
+void securentr(){
 	
 }
-void syscall12(){
+void securexit(){
 	
 }
 void syscall13(){
@@ -320,75 +324,74 @@ export struct SysCall[] SYSCALLS = {
 	{ JMP, &syscall3C, NOP },
 	{ JMP, &syscall3D, NOP },
 	{ JMP, &syscall3E, NOP },
-	{ JMP, &syscall3F, NOP },
+	{ JMP, &syscall3F, NOP }
 	
 	};
 	
 	export align(0x100) struct SysCall[] traps =  {
-		{ JMP,&reset,NOP }
-		{ JMP,&pagfault,NOP }
-		{ JMP,&alttabkey,NOP }
-		{ JMP,&vf011rd,NOP }
-		{ JMP,&vf011wr,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
-		{ JMP,&reserved,NOP }
+		{ JMP,&reset,NOP },
+		{ JMP,&pagfault,NOP },
+		{ JMP,&alttabkey,NOP },
+		{ JMP,&vf011rd,NOP },
+		{ JMP,&vf011wr,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
+		{ JMP,&reserved,NOP },
 		{ JMP,&cpukil,NOP }
-		
 		
 	};
 			
