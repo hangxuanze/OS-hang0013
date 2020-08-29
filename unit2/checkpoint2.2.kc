@@ -33,6 +33,11 @@ void reset()
 }
 void pagfault(){
 }
+void restorkey(){
+}
+void alttabkey(){
+}
+
 
 void main(){
 	
